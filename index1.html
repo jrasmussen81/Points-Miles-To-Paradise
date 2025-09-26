@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Points & Miles to Paradise</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        background: #f5e6d3;
+        color: #111;
+      }
+      header {
+        background: linear-gradient(180deg, #0b1d39, #1ba6a0);
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+      }
+      nav a {
+        color: #fff;
+        margin: 0 10px;
+        text-decoration: none;
+      }
+      section {
+        max-width: 800px;
+        margin: 40px auto;
+        padding: 20px;
+        background: #fff;
+        border-radius: 12px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      }
+      h2 {
+        margin-top: 0;
+      }
+      label {
+        display: block;
+        margin-bottom: 10px;
+      }
+      input, select, textarea, button, a.pay-btn {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        margin-bottom: 15px;
+        border-radius: 8px;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+      }
+      button, a.pay-btn {
+        background: #0b1d39;
+        color: #fff;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+      }
+      button:hover, a.pay-btn:hover {
+        opacity: 0.9;
+      }
+      footer {
+        text-align: center;
+        padding: 20px;
+        border-top: 1px solid #ccc;
+        font-size: 14px;
+        color: #555;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Points & Miles to Paradise</h1>
+      <p>Your life. Your points. Your miles. Your paradise.</p>
+      <nav>
+        <a href="#consultation">Book 1:1 Consultation</a>
+        <a href="#cruise">Cruise Booking</a>
+        <a href="#hotel">Hotel Booking</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section id="consultation">
+      <h2>Book 1:1 Consultation</h2>
+      <p>A focused 45–60 minute call to map your goals, eligible cards, responsible strategies, and a plan to redeem for maximum value.</p>
+      <form>
+        <label>Full name<input type="text" required></label>
+        <label>Email<input type="email" required></label>
+        <label>Phone number<input type="tel" required></label>
+        <label>Preferred time
+          <select required>
+            <option value="">Select...</option>
+            <option>Morning</option>
+            <option>Afternoon</option>
+            <option>Evening</option>
+          </select>
+        </label>
+        <label>Goals<textarea placeholder="Tell us where you are now and what you want to achieve"></textarea></label>
+        <a href="#pay" class="pay-btn">Pay $150</a>
+        <button type="submit">Submit & Continue</button>
+      </form>
+    </section>
+
+    <section id="cruise">
+      <h2>Submit Your Cruise Trip</h2>
+      <form>
+        <label>Full name<input type="text" required></label>
+        <label>Email<input type="email" required></label>
+        <label>Cruise line
+          <select required>
+            <option value="">Select...</option>
+            <option>Royal Caribbean</option>
+            <option>Carnival</option>
+            <option>Norwegian</option>
+            <option>Disney Cruise Line</option>
+            <option>Princess</option>
+            <option>Celebrity</option>
+            <option>MSC</option>
+          </select>
+        </label>
+        <label>Ship<input type="text" placeholder="Ship name" required></label>
+        <label>Earliest departure date<input type="date"></label>
+        <label>Latest return date<input type="date"></label>
+        <label>Preferred destination
+          <select>
+            <option value="">Select...</option>
+            <option>Caribbean</option>
+            <option>Bahamas</option>
+            <option>Alaska</option>
+            <option>Mediterranean</option>
+            <option>Hawaii</option>
+            <option>Panama Canal</option>
+            <option>Transatlantic</option>
+          </select>
+        </label>
+        <label>Cabin preference & notes<textarea placeholder="Balcony, suite, celebrations, etc."></textarea></label>
+        <button type="submit">Submit Cruise Request</button>
+      </form>
+    </section>
+
+    <section id="hotel">
+      <h2>Hotel Booking</h2>
+      <form>
+        <label>Full name<input type="text" required></label>
+        <label>Email<input type="email" required></label>
+        <label>Hotel chain
+          <select required>
+            <option value="">Select...</option>
+            <option>Marriott Bonvoy</option>
+            <option>Hilton Honors</option>
+            <option>Hyatt</option>
+            <option>IHG One Rewards</option>
+            <option>Wyndham Rewards</option>
+            <option>Best Western</option>
+          </select>
+        </label>
+        <label>Specific brand<input type="text" placeholder="e.g., St. Regis, Waldorf Astoria, Andaz"></label>
+        <label>Check-in<input type="date" required></label>
+        <label>Check-out<input type="date" required></label>
+        <label># of adults<input type="number" value="2" min="1"></label>
+        <label># of children<input type="number" value="0" min="0"></label>
+        <label>Room preferences & notes<textarea placeholder="King vs two queens, suite preference, etc."></textarea></label>
+        <button type="submit">Submit Hotel Request</button>
+      </form>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:Booking@PointsAndMilesToParadise.com">Booking@PointsAndMilesToParadise.com</a></p>
+    </section>
+
+    <footer>
+      © <script>document.write(new Date().getFullYear())</script> Points & Miles to Paradise — Award travel without the chaos.
+    </footer>
+  </body>
+</html>
